@@ -22,17 +22,41 @@
     </style>
   </head>
   <body>
-    Home New Popular Trending Categories The Bright Future of Web 3.0? We dive
-    into the next evolution of the web that claims to put the power of the
-    platforms back into the hands of the people. But is it really fulfilling its
-    promise? Read more New Hydrogen VS Electric Cars Will hydrogen-fueled cars
-    ever catch up to EVs? The Downsides of AI Artistry What are the possible
-    adverse effects of on-demand AI image generation? Is VC Funding Drying Up?
-    Private funding by VC firms is down 50% YOY. We take a look at what that
-    means. 01 Reviving Retro PCs What happens when old PCs are given modern
-    upgrades? 02 Top 10 Laptops of 2022 Our best picks for various needs and
-    budgets. 03 The Growth of Gaming How the pandemic has sparked fresh
-    opportunities.
+    <div class="backdrop hide"></div>
+    <div class="container">
+      <div class="header">
+        <div class="logo">
+          <img src="images/logo.svg" alt="logo" />
+          <img src="images/icon-menu.svg" id="menu-icon" alt="icon menu" />
+        </div>
+        <div class="menu hidden">
+          <div>
+            <img
+              src="images/icon-menu-close.svg"
+              id="menu-close-icon"
+              alt="close"
+            />
+          </div>
+          <div>
+            <a href="#">Home</a>
+            <a href="#">New</a>
+            <a href="#">Popular</a>
+            <a href="#">Trending</a>
+            <a href="#">Categories</a>
+          </div>
+        </div>
+      </div>
+      The Bright Future of Web 3.0? We dive into the next evolution of the web
+      that claims to put the power of the platforms back into the hands of the
+      people. But is it really fulfilling its promise? Read more New Hydrogen VS
+      Electric Cars Will hydrogen-fueled cars ever catch up to EVs? The
+      Downsides of AI Artistry What are the possible adverse effects of
+      on-demand AI image generation? Is VC Funding Drying Up? Private funding by
+      VC firms is down 50% YOY. We take a look at what that means. 01 Reviving
+      Retro PCs What happens when old PCs are given modern upgrades? 02 Top 10
+      Laptops of 2022 Our best picks for various needs and budgets. 03 The
+      Growth of Gaming How the pandemic has sparked fresh opportunities.
+    </div>
     <div class="attribution">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
@@ -40,5 +64,26 @@
       >. Coded by
       <a href="https://www.frontendmentor.io/profile/aalmuqahwi">aalmuqahwi</a>.
     </div>
+
+    <script>
+      (function () {
+        var $menuIcon = document.getElementById("menu-icon"),
+          $menu = document.querySelector(".menu"),
+          $backdrop = document.querySelector(".backdrop"),
+          $menuCloseIcon = document.getElementById("menu-close-icon");
+
+        $menuIcon.addEventListener("click", function (e) {
+          $menu.classList.remove("hidden");
+          $backdrop.classList.remove("hide");
+          $backdrop.classList.add("show");
+        });
+
+        $menuCloseIcon.addEventListener("click", function (e) {
+          $menu.classList.add("hidden");
+          $backdrop.classList.remove("show");
+          $backdrop.classList.add("hide");
+        });
+      })();
+    </script>
   </body>
 </html>
