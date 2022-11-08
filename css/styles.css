@@ -152,6 +152,43 @@ body div.backdrop.show {
   text-transform: uppercase;
   letter-spacing: 5px;
 }
+.container main .new-list {
+  display: flex;
+  gap: 1.5rem;
+  padding: 1.5rem;
+  flex-direction: column;
+  background-color: hsl(240deg, 100%, 5%);
+}
+.container main .new-list h2 {
+  color: hsl(35deg, 77%, 62%);
+}
+.container main .new-list .blogs {
+  display: flex;
+  gap: 2rem;
+  flex-direction: column;
+}
+.container main .new-list .blogs .blog {
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+}
+.container main .new-list .blogs .blog h3 {
+  color: hsl(36deg, 100%, 99%);
+}
+.container main .new-list .blogs .blog p {
+  color: hsl(233deg, 8%, 79%);
+}
+.container main .new-list .blogs .blog::after {
+  content: "";
+  background-color: hsl(233deg, 8%, 79%);
+  height: 1px;
+  display: flex;
+  margin-top: 1rem;
+  width: 100%;
+}
+.container main .new-list .blogs .blog:last-child::after {
+  display: none;
+}
 @media screen and (min-width: 1024px) {
   .container {
     margin-left: 150px;

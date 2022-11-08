@@ -182,6 +182,49 @@ body {
         }
       }
     }
+
+    .new-list {
+      display: flex;
+      gap: 1.5rem;
+      padding: 1.5rem;
+      flex-direction: column;
+      background-color: $very-dark-blue;
+
+      h2 {
+        color: $soft-orange;
+      }
+
+      .blogs {
+        display: flex;
+        gap: 2rem;
+        flex-direction: column;
+        .blog {
+          display: flex;
+          gap: 1rem;
+          flex-direction: column;
+          h3 {
+            color: $off-white;
+          }
+
+          p {
+            color: $grayish-blue;
+          }
+
+          &::after {
+            content: "";
+            background-color: $grayish-blue;
+            height: 1px;
+            display: flex;
+            margin-top: 1rem;
+            width: 100%;
+          }
+
+          &:last-child::after {
+            display: none;
+          }
+        }
+      }
+    }
   }
 
   @media screen and (min-width: 1024px) {
