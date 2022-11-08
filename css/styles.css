@@ -8,6 +8,10 @@ a {
   text-decoration: none;
 }
 
+img {
+  max-width: 100%;
+}
+
 body {
   font-size: 15px;
   font-family: "Inter", sans-serif;
@@ -107,6 +111,46 @@ body div.backdrop.show {
     font-weight: 400;
     color: hsl(236deg, 13%, 42%);
   }
+}
+.container main {
+  display: flex;
+  gap: 3rem;
+  flex-direction: column;
+}
+.container main .latest-blog {
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+}
+.container main .latest-blog .info {
+  display: flex;
+  gap: 0.7rem;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.container main .latest-blog .info h1 {
+  color: hsl(240deg, 100%, 5%);
+  font-size: 3rem;
+  line-height: 1;
+}
+.container main .latest-blog .info .info-content {
+  display: flex;
+  gap: 1.5rem;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.container main .latest-blog .info .info-content p {
+  line-height: 2;
+  color: hsl(236deg, 13%, 42%);
+}
+.container main .latest-blog .info .info-content button {
+  border: none;
+  background-color: hsl(5deg, 85%, 63%);
+  color: hsl(36deg, 100%, 99%);
+  padding: 1rem 2rem;
+  width: 200px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
 }
 @media screen and (min-width: 1024px) {
   .container {

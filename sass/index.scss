@@ -19,6 +19,10 @@ a {
   text-decoration: none;
 }
 
+img {
+  max-width: 100%;
+}
+
 body {
   font-size: 15px;
   font-family: "Inter", sans-serif;
@@ -127,6 +131,53 @@ body {
             font-size: 0.98rem;
             font-weight: 400;
             color: $dark-grayish-blue;
+          }
+        }
+      }
+    }
+  }
+
+  main {
+    display: flex;
+    gap: 3rem;
+    flex-direction: column;
+
+    .latest-blog {
+      display: flex;
+      gap: 1rem;
+      flex-direction: column;
+
+      .info {
+        display: flex;
+        gap: 0.7rem;
+        justify-content: space-between;
+        flex-direction: column;
+
+        h1 {
+          color: $very-dark-blue;
+          font-size: 3rem;
+          line-height: 1;
+        }
+
+        .info-content {
+          display: flex;
+          gap: 1.5rem;
+          flex-direction: column;
+          justify-content: space-between;
+
+          p {
+            line-height: 2;
+            color: $dark-grayish-blue;
+          }
+
+          button {
+            border: none;
+            background-color: $soft-red;
+            color: $off-white;
+            padding: 1rem 2rem;
+            width: 200px;
+            text-transform: uppercase;
+            letter-spacing: 5px;
           }
         }
       }
