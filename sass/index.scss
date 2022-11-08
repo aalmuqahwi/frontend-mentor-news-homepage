@@ -88,6 +88,12 @@ body {
         gap: 2rem;
         font-size: 1.1rem;
         color: $very-dark-blue;
+
+        a {
+          &:hover {
+            color: $soft-red;
+          }
+        }
       }
 
       &.hidden {
@@ -178,6 +184,11 @@ body {
             width: 200px;
             text-transform: uppercase;
             letter-spacing: 5px;
+
+            &:hover {
+              cursor: pointer;
+              background-color: $very-dark-blue;
+            }
           }
         }
       }
@@ -204,6 +215,10 @@ body {
           flex-direction: column;
           h3 {
             color: $off-white;
+            &:hover {
+              cursor: pointer;
+              color: $soft-orange;
+            }
           }
 
           p {
@@ -255,6 +270,11 @@ body {
           h3 {
             color: $very-dark-blue;
             font-weight: 700;
+
+            &:hover {
+              cursor: pointer;
+              color: $soft-red;
+            }
           }
 
           p {

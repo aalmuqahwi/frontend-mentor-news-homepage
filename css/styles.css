@@ -74,6 +74,9 @@ body div.backdrop.show {
   font-size: 1.1rem;
   color: hsl(240deg, 100%, 5%);
 }
+.container .header .menu div:last-child a:hover {
+  color: hsl(5deg, 85%, 63%);
+}
 .container .header .menu.hidden {
   display: none;
 }
@@ -152,6 +155,10 @@ body div.backdrop.show {
   text-transform: uppercase;
   letter-spacing: 5px;
 }
+.container main .latest-blog .info .info-content button:hover {
+  cursor: pointer;
+  background-color: hsl(240deg, 100%, 5%);
+}
 .container main .new-list {
   display: flex;
   gap: 1.5rem;
@@ -174,6 +181,10 @@ body div.backdrop.show {
 }
 .container main .new-list .blogs .blog h3 {
   color: hsl(36deg, 100%, 99%);
+}
+.container main .new-list .blogs .blog h3:hover {
+  cursor: pointer;
+  color: hsl(35deg, 77%, 62%);
 }
 .container main .new-list .blogs .blog p {
   color: hsl(233deg, 8%, 79%);
@@ -214,6 +225,10 @@ body div.backdrop.show {
 .container main .top-blogs .top-blog .top-blog-content h3 {
   color: hsl(240deg, 100%, 5%);
   font-weight: 700;
+}
+.container main .top-blogs .top-blog .top-blog-content h3:hover {
+  cursor: pointer;
+  color: hsl(5deg, 85%, 63%);
 }
 .container main .top-blogs .top-blog .top-blog-content p {
   color: hsl(236deg, 13%, 42%);
