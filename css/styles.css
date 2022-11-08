@@ -189,6 +189,36 @@ body div.backdrop.show {
 .container main .new-list .blogs .blog:last-child::after {
   display: none;
 }
+.container main .top-blogs {
+  display: flex;
+  gap: 2rem;
+  flex-direction: column;
+}
+.container main .top-blogs .top-blog {
+  display: flex;
+  gap: 1.5rem;
+}
+.container main .top-blogs .top-blog img {
+  width: 100px;
+}
+.container main .top-blogs .top-blog .top-blog-content {
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  height: 127px;
+}
+.container main .top-blogs .top-blog .top-blog-content h2 {
+  color: hsl(233deg, 8%, 79%);
+  font-size: 1.7rem;
+}
+.container main .top-blogs .top-blog .top-blog-content h3 {
+  color: hsl(240deg, 100%, 5%);
+  font-weight: 700;
+}
+.container main .top-blogs .top-blog .top-blog-content p {
+  color: hsl(236deg, 13%, 42%);
+  line-height: 1.6;
+}
 @media screen and (min-width: 1024px) {
   .container {
     margin-left: 150px;

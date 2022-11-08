@@ -225,6 +225,45 @@ body {
         }
       }
     }
+
+    .top-blogs {
+      display: flex;
+      gap: 2rem;
+      flex-direction: column;
+
+      .top-blog {
+        display: flex;
+        gap: 1.5rem;
+
+        img {
+          width: 100px;
+        }
+
+        .top-blog-content {
+          display: flex;
+          gap: 1rem;
+          flex-direction: column;
+          height: 127px;
+
+          h2 {
+            color: $grayish-blue;
+            font: {
+              size: 1.7rem;
+            }
+          }
+
+          h3 {
+            color: $very-dark-blue;
+            font-weight: 700;
+          }
+
+          p {
+            color: $dark-grayish-blue;
+            line-height: 1.6;
+          }
+        }
+      }
+    }
   }
 
   @media screen and (min-width: 1024px) {
