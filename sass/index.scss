@@ -292,5 +292,27 @@ body {
       right: 150px;
       top: 50px;
     }
+
+    main {
+      display: grid;
+      max-height: 750px;
+      grid-template-rows: repeat(2, 1fr);
+      grid-template-columns: repeat(3, 1fr);
+
+      .latest-blog {
+        grid-row: 1 span;
+        grid-column: 2 span;
+
+        .info {
+          flex-direction: row;
+        }
+      }
+
+      .top-blogs {
+        grid-row: 1 span;
+        grid-column: 3 span;
+        flex-direction: row;
+      }
+    }
   }
 }

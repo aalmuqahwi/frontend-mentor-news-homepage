@@ -240,4 +240,22 @@ body div.backdrop.show {
     margin-right: 150px;
     margin-top: 50px;
   }
+  .container main {
+    display: grid;
+    max-height: 750px;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .container main .latest-blog {
+    grid-row: 1 span;
+    grid-column: 2 span;
+  }
+  .container main .latest-blog .info {
+    flex-direction: row;
+  }
+  .container main .top-blogs {
+    grid-row: 1 span;
+    grid-column: 3 span;
+    flex-direction: row;
+  }
 }
