@@ -156,6 +156,7 @@ body div.backdrop.show {
   width: 200px;
   text-transform: uppercase;
   letter-spacing: 5px;
+  font-weight: 700;
 }
 .container main .latest-blog .info .info-content button:hover {
   cursor: pointer;
