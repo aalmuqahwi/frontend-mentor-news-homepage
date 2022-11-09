@@ -170,6 +170,7 @@ body div.backdrop.show {
 }
 .container main .new-list h2 {
   color: hsl(35deg, 77%, 62%);
+  font-size: 2rem;
 }
 .container main .new-list .blogs {
   display: flex;
