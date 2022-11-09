@@ -255,6 +255,10 @@ body div.backdrop.show {
   .container main .latest-blog .info {
     flex-direction: row;
   }
+  .container main .new-list {
+    grid-row: 1 span;
+    grid-column: 1 span;
+  }
   .container main .top-blogs {
     grid-row: 1 span;
     grid-column: 3 span;

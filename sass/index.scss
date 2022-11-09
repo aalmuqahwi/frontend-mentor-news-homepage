@@ -312,6 +312,11 @@ body {
         }
       }
 
+      .new-list {
+        grid-row: 1 span;
+        grid-column: 1 span;
+      }
+
       .top-blogs {
         grid-row: 1 span;
         grid-column: 3 span;
