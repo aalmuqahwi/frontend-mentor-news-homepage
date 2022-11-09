@@ -7,6 +7,7 @@ This is a solution to the [News homepage challenge on Frontend Mentor](https://w
 - [Overview](#overview)
   - [The challenge](#the-challenge)
   - [Screenshot](#screenshot)
+  - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
@@ -35,6 +36,11 @@ Mobile
 Mobile Menu
 
 ![](/images/fm_news_hompage_mobile_menu.png)
+
+### Links
+
+- Solution URL: [Add solution URL here](https://www.frontendmentor.io/solutions/news-homepage-solution-using-sass-html-and-js-YD2h0NGJxw)
+- Live Site URL: [Add live site URL here](https://aalmuqahwi.github.io/frontend-mentor-news-homepage/)
 
 ## My process
 
